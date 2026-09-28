@@ -212,8 +212,29 @@ h1 {
 }
 
 .about {
-  max-width: 740px;
   padding: 90px 0 100px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-photo-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.about-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  border: 1px solid #e3e3df;
+}
+
+.about-text {
+  max-width: 740px;
 }
 
 .about p:last-child {
