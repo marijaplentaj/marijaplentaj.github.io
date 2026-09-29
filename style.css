@@ -221,17 +221,14 @@ h1 {
 }
 
 .about {
-  padding: 90px 0 100px;
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 30px;
-  align-items: start;
+  padding: 70px 0 100px;
 }
 
-.about-photo-wrap {
+.about-top {
   display: flex;
-  justify-content: center;
-  margin-bottom: 28px;
+  align-items: center;
+  gap: 28px;
+  margin-top: 30px;
 }
 
 .about-photo {
@@ -244,9 +241,17 @@ h1 {
   border: 1px solid #e3e3df;
 }
 
-.about-text {
-  max-width: 740px;
-  width: 100%;
+.about-top h2 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.about-bio {
+  margin-top: 30px;
+  max-width: 800px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.15rem;
+  color: #4f514d;
 }
 
 footer {
