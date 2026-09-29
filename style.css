@@ -222,8 +222,9 @@ h1 {
 
 .about {
   padding: 90px 0 100px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
   align-items: start;
 }
 
