@@ -27,9 +27,13 @@ a {
   align-items: center;
 }
 
+.site-logo {
+  display: block;
+}
+
 .site-logo img {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
   display: block;
 }
