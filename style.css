@@ -394,6 +394,11 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .arrangements-list {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+
   .about-photo {
     float: none;
     shape-outside: none;
@@ -403,10 +408,6 @@ footer {
 
   .about-content {
     text-align: center;
-  }
-
-  .arrangement-item {
-    padding: 16px 0;
   }
 
   footer {
