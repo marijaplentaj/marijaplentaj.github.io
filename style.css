@@ -18,6 +18,9 @@ a {
   color: inherit;
 }
 
+
+/* HEADER */
+
 .site-header {
   max-width: 1180px;
   margin: 0 auto;
@@ -35,10 +38,6 @@ a {
   width: 36px;
   height: 36px;
   object-fit: contain;
-  display: block;
-}
-
-.site-logo {
   display: block;
 }
 
@@ -63,11 +62,17 @@ nav a:hover {
   opacity: 0.55;
 }
 
+
+/* MAIN */
+
 main {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 30px;
 }
+
+
+/* HERO */
 
 .hero {
   min-height: 560px;
@@ -87,7 +92,9 @@ main {
   color: #60635f;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
 }
@@ -133,6 +140,9 @@ h1 {
   object-fit: contain;
   display: block;
 }
+
+
+/* SCORES */
 
 .scores-section {
   padding: 88px 0 96px;
@@ -186,8 +196,7 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 24px;
-  background:
-    linear-gradient(145deg, #f5f2ea 0%, #ebece9 100%);
+  background: linear-gradient(145deg, #f5f2ea 0%, #ebece9 100%);
   text-align: center;
   font-family: "Libre Baskerville", serif;
   font-size: 1.5rem;
@@ -235,6 +244,44 @@ h1 {
   opacity: 0.55;
 }
 
+
+/* ARRANGEMENTS */
+
+.arrangements-list {
+  margin-top: 20px;
+}
+
+.arrangement-item {
+  padding: 18px 0;
+  border-bottom: 1px solid #e3e3df;
+}
+
+.arrangement-item:first-child {
+  border-top: 1px solid #e3e3df;
+}
+
+.arrangement-item h3 {
+  margin: 0 0 5px;
+  font-size: 1.15rem;
+}
+
+.arrangement-item p {
+  margin: 0;
+  color: #6a6c67;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.arrangement-note {
+  margin-top: 4px !important;
+  font-size: 0.88rem !important;
+  font-style: italic;
+  color: #858782 !important;
+}
+
+
+/* ABOUT */
+
 .about {
   padding: 70px 0 100px;
 }
@@ -272,6 +319,9 @@ h1 {
   color: #4f514d;
 }
 
+
+/* FOOTER */
+
 footer {
   max-width: 1180px;
   margin: 0 auto;
@@ -281,6 +331,9 @@ footer {
   color: #777973;
   font-size: 0.82rem;
 }
+
+
+/* TABLET */
 
 @media (max-width: 900px) {
   .hero {
@@ -296,6 +349,9 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
+/* MOBILE */
 
 @media (max-width: 560px) {
   .site-header {
@@ -332,6 +388,21 @@ footer {
 
   .score-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    float: none;
+    shape-outside: none;
+    display: block;
+    margin: 0 auto 24px;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .arrangement-item {
+    padding: 16px 0;
   }
 
   footer {
