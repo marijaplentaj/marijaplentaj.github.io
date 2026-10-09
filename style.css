@@ -397,10 +397,6 @@ nav a {
     font-size: 2.9rem;
   }
 
-  .hero-image {
-    height: 280px;
-  }
-
   .section-heading {
     align-items: start;
     flex-direction: column;
