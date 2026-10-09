@@ -157,6 +157,13 @@ h1 {
   padding: 48px 0;
   border-bottom: 1px solid #e6e6e3;
 }
+.score-group-title {
+  margin: 0 0 24px;
+}
+
+#teaching {
+  margin-top: 48px;
+}
 
 .section-heading {
   display: flex;
