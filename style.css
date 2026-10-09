@@ -389,16 +389,21 @@ footer {
     padding: 0 18px;
   }
 
-  .hero {
-    min-height: auto;
-    gap: 38px;
-    padding: 40px 0 28px;
-  }
+ .hero {
+  min-height: auto;
+  gap: 38px;
+  padding: 40px 0 28px;
+}
 
-  /* Zadnja slika slidera – Trio harmonika */
-  .hero-slide:nth-child(7) {
-    object-position: left center;
-  }
+.hero-image {
+  width: 100%;
+  margin-left: 0;
+}
+
+/* Zadnja slika slidera – Trio harmonika */
+.hero-slide:nth-child(7) {
+  object-position: left center;
+}
 
   h1 {
     font-size: 2.9rem;
