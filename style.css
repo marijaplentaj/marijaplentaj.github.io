@@ -370,18 +370,19 @@ footer {
 /* MOBILE */
 
 @media (max-width: 560px) {
+
   .site-header {
-  padding: 22px 14px;
-}
+    padding: 22px 14px;
+  }
 
-nav {
-  gap: 8px;
-  margin-left: auto;
-}
+  nav {
+    gap: 8px;
+    margin-left: auto;
+  }
 
-nav a {
-  font-size: 0.85rem;
-}
+  nav a {
+    font-size: 0.85rem;
+  }
 
   main {
     padding: 0 18px;
@@ -390,7 +391,12 @@ nav a {
   .hero {
     min-height: auto;
     gap: 38px;
-    padding: 56px 0;
+    padding: 40px 0 28px;
+  }
+
+  /* Zadnja slika slidera – Trio harmonika */
+  .hero-slide:nth-child(7) {
+    object-position: left center;
   }
 
   h1 {
@@ -409,7 +415,11 @@ nav a {
 
   .arrangements-list {
     grid-template-columns: 1fr;
-    row-gap: 24px;
+    row-gap: 14px;
+  }
+
+  .arrangement-item {
+    padding: 15px 16px;
   }
 
   .about-photo {
