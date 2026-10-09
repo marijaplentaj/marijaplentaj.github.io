@@ -75,7 +75,7 @@ main {
 /* HERO */
 
 .hero {
-  min-height: 560px;
+  min-height: 460px;
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   align-items: center;
@@ -145,7 +145,7 @@ h1 {
 /* SCORES */
 
 .scores-section {
-  padding: 88px 0 96px;
+  padding: 58px 0 96px;
   border-bottom: 1px solid #e6e6e3;
 }
 
