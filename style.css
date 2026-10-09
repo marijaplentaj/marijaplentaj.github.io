@@ -157,13 +157,6 @@ h1 {
   padding: 48px 0;
   border-bottom: 1px solid #e6e6e3;
 }
-.score-group-title {
-  margin: 0 0 24px;
-}
-
-#teaching {
-  margin-top: 48px;
-}
 
 .section-heading {
   display: flex;
@@ -182,6 +175,14 @@ h1 {
   margin: 0;
   color: #6b6d68;
   font-size: 0.9rem;
+}
+
+.score-group-title {
+  margin: 0 0 24px;
+}
+
+#teaching {
+  margin-top: 48px;
 }
 
 .score-grid {
@@ -270,7 +271,7 @@ h1 {
 }
 
 .arrangements-list {
-  margin-top: 24px;
+  margin-top: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 70px;
@@ -300,10 +301,11 @@ h1 {
   color: #858782 !important;
 }
 
+
 /* ABOUT */
 
 .about {
-  padding: 70px 0 100px;
+  padding: 48px 0 100px;
   border-top: 1px solid #e6e6e3;
   margin-top: 48px;
 }
@@ -360,6 +362,7 @@ footer {
 /* TABLET */
 
 @media (max-width: 900px) {
+
   .hero {
     grid-template-columns: 1fr;
     padding: 70px 0;
@@ -396,21 +399,21 @@ footer {
     padding: 0 18px;
   }
 
- .hero {
-  min-height: auto;
-  gap: 38px;
-  padding: 40px 0 28px;
-}
+  .hero {
+    min-height: auto;
+    gap: 38px;
+    padding: 40px 0 28px;
+  }
 
-.hero-image {
-  width: 100%;
-  margin-left: 0;
-}
+  .hero-image {
+    width: 100%;
+    margin-left: 0;
+  }
 
-/* Zadnja slika slidera – Trio harmonika */
-.hero-slide:nth-child(7) {
-  object-position: left center;
-}
+  /* Zadnja slika slidera – Trio harmonika */
+  .hero-slide:nth-child(7) {
+    object-position: left center;
+  }
 
   h1 {
     font-size: 2.9rem;
