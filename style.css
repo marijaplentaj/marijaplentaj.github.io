@@ -363,13 +363,16 @@ footer {
 
 @media (max-width: 560px) {
   .site-header {
-    padding: 22px 24px;
-  }
+  padding: 22px 14px;
+}
 
-  nav {
-    gap: 12px;
-    margin-right: 10px;
-    font-size: 0.95rem;
+nav {
+  gap: 8px;
+  margin-left: auto;
+}
+
+nav a {
+  font-size: 0.85rem;
 }
 
   main {
