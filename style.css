@@ -368,8 +368,8 @@ footer {
 
   nav {
     gap: 12px;
-    nav a {
-    font-size: 0.9rem;
+    margin-right: 10px;
+    font-size: 0.95rem;
 }
   }
 
