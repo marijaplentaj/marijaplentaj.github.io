@@ -2,14 +2,45 @@
 <html lang="hr">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-72RWLGBR1J"></script>
+<!-- Google Analytics - only after consent -->
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-72RWLGBR1J');
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied'
+  });
+
+  function loadGoogleAnalytics() {
+    if (window.googleAnalyticsLoaded) return;
+
+    window.googleAnalyticsLoaded = true;
+
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-72RWLGBR1J';
+    document.head.appendChild(script);
+
+    gtag('js', new Date());
+    gtag('config', 'G-72RWLGBR1J');
+  }
+
+  const analyticsConsent = localStorage.getItem('analyticsConsent');
+
+  if (analyticsConsent === 'granted') {
+    gtag('consent', 'update', {
+      analytics_storage: 'granted'
+    });
+
+    loadGoogleAnalytics();
+  }
+</script>
 </script>
 
   <!-- META -->
