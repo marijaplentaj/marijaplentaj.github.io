@@ -80,7 +80,7 @@
   <!-- EXISTING STYLES -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- COOKIE CONSENT STYLES -->
+  <!-- COOKIE CONSENT AND BACK-TO-TOP STYLES -->
   <style>
     .cookie-banner {
       position: fixed;
@@ -158,6 +158,42 @@
 
       .cookie-actions {
         align-self: flex-end;
+      }
+    }
+
+    /* BACK TO TOP */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .back-to-top {
+      display: flex;
+      justify-content: flex-end;
+      margin: 12px 0 24px;
+    }
+
+    .back-to-top a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      color: #777;
+      text-decoration: none;
+      font-family: "DM Sans", sans-serif;
+      font-size: 23px;
+      line-height: 1;
+      transition: color 0.2s ease;
+    }
+
+    .back-to-top a:hover,
+    .back-to-top a:focus-visible {
+      color: #222;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
       }
     }
   </style>
@@ -364,6 +400,13 @@
 
       </div>
 
+      <!-- BACK TO TOP: ORIGINAL COMPOSITIONS -->
+      <div class="back-to-top">
+        <a href="#top"
+           aria-label="Back to top after Original Compositions"
+           title="Back to top">↑</a>
+      </div>
+
       <!-- ARRANGEMENTS -->
       <h3 class="score-group-title" id="arrangements">
         Arrangements
@@ -436,6 +479,14 @@
         </div>
 
       </div>
+
+      <!-- BACK TO TOP: ARRANGEMENTS -->
+      <div class="back-to-top">
+        <a href="#top"
+           aria-label="Back to top after Arrangements"
+           title="Back to top">↑</a>
+      </div>
+
     </section>
 
     <!-- TEACHING MATERIALS -->
@@ -599,6 +650,14 @@
         </article>
 
       </div>
+
+      <!-- BACK TO TOP: TEACHING MATERIALS -->
+      <div class="back-to-top">
+        <a href="#top"
+           aria-label="Back to top after Teaching Materials"
+           title="Back to top">↑</a>
+      </div>
+
     </section>
 
     <!-- ABOUT -->
@@ -632,6 +691,14 @@
           She works as a jury member at national and international music competitions and regularly gives seminars, lectures and presentations at professional development events for music teachers. Her work also includes creating original compositions, arrangements and teaching materials for accordion. She especially enjoys composing and arranging music for accordion, often creating pieces and adaptations inspired by her students, their interests and the possibilities of the instrument.
         </p>
       </div>
+
+      <!-- BACK TO TOP: ABOUT -->
+      <div class="back-to-top">
+        <a href="#top"
+           aria-label="Back to top after About"
+           title="Back to top">↑</a>
+      </div>
+
     </section>
 
   </main>
